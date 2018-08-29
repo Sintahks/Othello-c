@@ -3,8 +3,7 @@
 /*
  * Filename: game.h
  * Author: David Palafox 
- * Userid: cs30xex
- * Description: TODO 
+ * Description: Test 
  * Date: Aug 09 2018
  * Sources of Help: TODO
  */
