@@ -4,7 +4,7 @@
 struct Board {
   
   // Pointer to array of pieces on the board
-  unsigned char ** game_board;
+  char ** game_board;
 };
 
 struct Direction {
@@ -19,5 +19,6 @@ typedef struct Direction direct_t;
 #define BOARD_SIZE 9
 #define BLACK -1 
 #define WHITE 1 
-
+#define BLK_CHAR 'b'
+#define WHT_CHAR 'w'
 #endif

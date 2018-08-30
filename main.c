@@ -42,7 +42,7 @@ int main() {
 
     for( int j = 0; j < BOARD_SIZE; j++ ) { 
 
-      fprintf( stdout, "%c ", printMap( board[i][j] );
+      fprintf( stdout, "%c ", printChar( board->game_board[i][j] ) );
     }
       fprintf( stdout, "\n" );
   }

@@ -9,13 +9,13 @@
  */
 
 
-int isValidMove( direct_t *, board_t * );
+int isValidMove( direct_t *, board_t *, char, int, int );
 
 int isInBounds( int x, int y );
 
-char printMap( char ch );
+char printChar( char ch );
 
-void convertPieces( char * pieces, int pieceCount );
+void convertPieces( char ** pieces, int pieceCount );
 
 #define numOfDirs 8
 

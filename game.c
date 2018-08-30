@@ -30,7 +30,7 @@ int isValidMove( direct_t * dirArr, board_t * board, char color, int x, int y ) 
 
     while( isInBounds( nextPiece_x, nextPiece_y ) ) {
 
-      nextPiece = board[ nextPiece_x ] + nextPiece_y ;
+      nextPiece = board->game_board[ nextPiece_x ] + nextPiece_y ;
 
 
       /* Visited empty space */
@@ -65,9 +65,9 @@ int isInBounds( int x, int y ) {
   return ( 0 <= x && x < BOARD_SIZE && 0 <=y && y < BOARD_SIZE );
 }
 
-char printMap( char ch ) {
-  if( ch == -1 ) { return BLACK; }
-  else if( ch == 1 ) { return WHITE; }
+char printChar( char ch ) {
+  if( ch == BLACK ) { return BLK_CHAR; }
+  else if( ch == WHITE ) { return WHT_CHAR; }
   else { return '.'; }
 }
 
